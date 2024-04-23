@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+   
+    color: #701942; 
+    background-image: url('../img/pexels-renato-calsavara-8148893.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #362363;
+}
+p {
+    font-size: large;
+    text-align:center;
+}
+li {
+    margin-right: 40px;
+}
+
+
+ul {
+    margin-top: 2rem;
+    margin-right: 50px; 
+    font-size: large;
+    justify-content: space-between; 
+}
+
+h1 {
+    color: #896bc0; 
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 200em;
+    font-size: 3em;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+.lista_link {
+    text-align: center;
+    justify-content: space-between; 
+}
+
+.corpo {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 10px;
+    background-color: #9d6ba3;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos para links */
+a {
+    color: #8f4767;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #fdcae1;
+}
+ol {
+    margin-top: 2rem;
+    margin-right: 50px; 
+    font-size: large;
+    justify-content: space-between;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+.footer {
+    background-color: #fdcae1;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+    

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" media="screen">
+    <title>Formulário de Contato</title>
+   
+</head>
+
+<body>
+    <h2>Formulário de Contato</h2>
+
+<form action="/submit" method="post">
+   
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+       
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+       
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required><br><br>
+        
+        
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+        
+
+        <!-- Campo de checkbox com label associado -->
+        <label>Interesses:</label><br>
+        <input type="checkbox" id="cachorrinhos" name="cachorrinhos" value="cachorrinhos">
+        <label for="cachorrinhos">Cachorrinhos</label>
+        <input type="checkbox" id="gatinhos" name="gatinhos" value="gatinhos">
+        <label for="gatinhos">Gatinhos</label><br><br>
+        <input type="checkbox" id="anfibios" name="anfibios" value="anfibios">
+        <label for="anfibios">Anfíbios/Répteis</label>
+        <input type="checkbox" id="roedores" name="roedores" value="roedores">
+        <label for="roedores">Roedores</label><br><br>
+        <input type="checkbox" id="outros" name="outros" value="outros">
+        <label for="outros">Outros</label><br><br>
+
+        <!-- Campo select com label associado -->
+        <label for="quant">Já possui quantos filhotinhos?</label>
+        <select id="quant" name="quant">
+            <option value="1_2">De 1 a 2</option>
+            <option value="3_5">De 3 a 5</option>
+            <option value="5">Acima de 5</option>
+            <option value="nenhum">Nenhum ainda</option>
+        </select><br><br>
+
+        <!-- Campo textarea com label associado -->
+        <label for="mensagem">Deixa sua mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+    </fieldset>
+
+    <!-- Botão de envio (submit) -->
+    <input type="submit" value="Enviar">
+
+    <!-- Botão comum -->
+    <button type="button" onclick="limparFormulario()">Limpar</button>
+</form>
+<script>
+    function limparFormulario() {
+        document.getElementById("nome").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("masculino").checked = false;
+        document.getElementById("feminino").checked = false;
+        document.getElementById("cachorrinhos").checked = false;
+        document.getElementById("gatinhos").checked = false;
+        document.getElementById("anfibios").checked = false;
+        document.getElementById("roedores").checked = false;
+        document.getElementById("outros").checked = false;
+        document.getElementById("quant").selectedIndex = 0;
+        document.getElementById("mensagem").value = "";
+    }
+</script>
+</body>
+</html>
